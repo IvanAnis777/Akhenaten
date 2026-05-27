@@ -36,5 +36,5 @@ function info_window_mansion_on_init(window) {
     }
     //write window.protection_info.text = b.is_protected_by_police ? __loc("#mansion_protected_by_police") : __loc("#mansion_not_protected_theft")
     window.change_salary.readonly = city.mission_has_won
-    window.savings_hold.text = __loc(b.meta_text_id, 2) + " " + b.tax_income_or_storage + " Db"
+    window.savings_hold.text = __loc(52, 1) + " " + city.kingdome.personal_savings + " " + __loc(6, 0)
 }
